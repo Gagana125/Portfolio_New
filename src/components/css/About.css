@@ -1,0 +1,92 @@
+.about {
+  padding: 5vh 5vw; /* Padding for desktop */
+}
+
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.about-outline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  max-width: 90vw;
+}
+
+.about-img {
+  box-shadow: 0 8px 8px #6A1E55;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.about-content {
+  text-align: justify;
+  margin-right: 2vw;
+}
+
+.about-content p {
+  flex: 2;
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+.about-image {
+  width: 20vw;
+  height: 50vh;
+  border-radius: 8px;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .about-outline {
+    flex-direction: column; /* Stack image and content vertically */
+  }
+
+  .about-content {
+    font-size: 0.9em; /* Slightly smaller font size for tablet */
+  }
+
+  .about-image {
+    width: 28vw; /* Make the image smaller on tablet */
+    height: 40vh; /* Scale down the height */
+  }
+}
+
+/* Mobile view */
+@media (max-width: 576px) {
+  .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-outline {
+    flex-direction: column; /* Stack image and content vertically */
+    text-align: center; /* Center the text */
+    padding: 3rem 1rem; /* Adjust padding for mobile */
+  }
+
+  .about-img {
+    margin-bottom: 2rem; /* Add space between the image and content */
+  }
+
+  .about-image {
+    width: 45vw; /* Make the image much smaller */
+    height: 30vh; /* Reduce height for mobile */
+  }
+
+  .about-content p {
+    font-size: 0.9em; /* Smaller font size */
+    line-height: 1.5; /* Adjust line height for mobile */
+  }
+
+  .heading {
+    font-size: 2.2rem; /* Smaller heading for mobile */
+  }
+}

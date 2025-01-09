@@ -1,0 +1,134 @@
+.contact-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 60vw;
+  height: 45vh;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 20px;
+  margin-bottom: 4vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 20vw;
+  align-self: center;
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.contact-info ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.contact-info ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-img {
+  width: 20vw;
+  height: 40vh;
+}
+
+.contact-img-container {
+  width: 25vw;
+  height: 45vh;
+  border-radius: 10px;
+  margin-bottom: 5vh;
+  padding: 10px;
+}
+
+/* Tablet and Mobile Views (Responsive Adjustments) */
+@media (max-width: 968px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .contact-info {
+    width: 70vw;
+    font-size: 0.8em;  /* Scale down font size */
+  }
+
+  .contact-img-container {
+    width: 50vw;
+    height: 30vh; /* Adjust image size */
+  }
+
+  .contact-img {
+    width: 40vw;
+    height: 25vh; /* Adjust image size */
+  }
+
+  .contact-container h1 {
+    font-size: 28px;  /* Reduce heading font size */
+  }
+
+  .contact-info ul li {
+    font-size: 1.1em;  /* Reduce font size for the list items */
+  }
+
+  .contact-info h2 {
+    font-size: 20px; /* Smaller heading size */
+  }
+}
+
+/* Mobile View (for screens smaller than 480px) */
+@media (max-width: 380px) {
+  .contact-info {
+    width: 30vw; /* Further scale down for mobile */
+  }
+
+  .contact-img-container {
+    width: 30vw;
+    height: 25vh; /* Adjust image size */
+  }
+
+  .contact-img {
+    width: 20vw;
+    height: 20vh; /* Adjust image size */
+  }
+
+  .contact-container h1 {
+    font-size: 20px;  /* Further reduce font size */
+  }
+
+  .contact-info ul li {
+    font-size: 0.8em;  /* Further reduce font size for list items */
+  }
+
+  .contact-info h2 {
+    font-size: 15px;  /* Further reduce heading size */
+  }
+}

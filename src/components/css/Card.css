@@ -1,0 +1,94 @@
+.card-link {
+    text-decoration: none;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+    width: 60vw;
+    background: #A64D79;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #000;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card.reverse {
+    display: inline-flex;
+  }
+  
+  .card-image {
+    width: 20vw;
+    margin-right: 5vw;
+    height: 25vh;
+    border-radius: 8px;
+  }
+  
+  .card-content {
+    flex-direction: row;
+    padding: 20px;
+    color: black;
+    display: flex;
+  }
+  
+  .card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 1rem;
+    color: #161616;
+    line-height: 1.5;
+  }
+
+.projects-list{
+  margin-bottom: 5vh;
+}
+
+/* Mobile and tablet styles */
+@media (max-width: 968px) {
+  .card {
+    width: 60vw; 
+    align-items: center;
+  }
+
+  .card-image {
+    width: 30vw; 
+    height: auto;
+    margin-right: 0;
+  }
+
+  .card-content {
+    padding: 15px;
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .card-content h3 {
+    font-size: 1.2rem; 
+  }
+
+  .card-content p {
+    font-size: 0.9rem; 
+  }
+
+  .card.reverse {
+    display: flex;
+  }
+
+  .heading2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+  

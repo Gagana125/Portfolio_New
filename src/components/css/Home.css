@@ -1,0 +1,130 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #bdbdbd;
+  height: 100vh; 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2), #A64D79); */
+            background: linear-gradient(rgba(0, 0, 0, 0.2), #A64D79), 
+            url('/src/assets/images/bg1.jpg') no-repeat center center/cover;
+}
+
+/* .home-img{
+  background: linear-gradient(rgba(0, 0, 0, 0.2), #A64D79);
+  height: 100vh;
+  background-repeat: no-repeat;
+} */
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  margin-top: 20vh;
+  animation: popUp 3s ease-out forwards;
+  opacity: 0.5;
+  transform: scale(0.5);
+}
+
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.home-content p {
+  font-size: 1.5rem;
+  color: #bfa5bb;
+  animation: popUp2 3s ease-out forwards;
+  opacity: 0;
+  transform: scale(1.2);
+}
+
+@keyframes popUp2 {
+  0% {
+    opacity: 0;
+    transform: opacity(0);
+  }
+  50% {
+    opacity: 0.7;
+    transform: opacity(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: opacity(1);
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 576px) {
+  .home {
+      background-size: cover; /* Adjust background image size for mobile */
+  }
+
+  .home-content h1 {
+      font-size: 2rem; /* Smaller font size for mobile */
+      margin-top: 10vh;
+      word-wrap: break-word; /* Allow name to break into two lines if too long */
+  }
+
+  .home-content p {
+      font-size: 1rem; /* Smaller font size for mobile */
+      justify-self: center;
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  .home-content h1 {
+      font-size: 2.5rem; /* Slightly smaller font size for tablet */
+      margin-top: 15vh;
+  }
+
+  .home-content p {
+      font-size: 1.1rem; /* Slightly smaller font size for tablet */
+      padding: 0 1rem; /* Add some padding for better readability */
+      max-width: 55vw;
+  }
+
+  /* Resize the image if you're including it in the future */
+  .home-img-container {
+      width: 60vw;
+      height: 60vh;
+  }
+
+  .home-img {
+      width: 50vw;
+      height: 50vh;
+  }
+}
+
+/* Desktop and larger screens */
+@media (min-width: 769px) {
+  .home-content h1 {
+      font-size: 3rem;
+      margin-top: 20vh;
+  }
+
+  .home-content p {
+      font-size: 1.5rem;
+      max-width: 75vw;
+  }
+}
