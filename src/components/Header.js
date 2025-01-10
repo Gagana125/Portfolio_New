@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './css/Header.css';
 import { Link } from 'react-router-dom';
 import cv from '../assets/files/cv-new.pdf';
+import cv2 from '../assets/files/CV.pdf';
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -57,7 +58,7 @@ const Header = () => {
           </li>
         ))}
       </ul>
-      <a href={cv} download>
+      <a href={cv2} download>
         <button className="cv-btn">Download CV</button>
       </a>
     </nav>

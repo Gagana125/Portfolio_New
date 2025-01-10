@@ -74,7 +74,7 @@
 }
 
 /* Mobile Styles */
-@media (max-width: 576px) {
+@media (max-width: 476px) {
   .home {
       background-size: cover; /* Adjust background image size for mobile */
   }
@@ -100,8 +100,9 @@
 
   .home-content p {
       font-size: 1.1rem; /* Slightly smaller font size for tablet */
-      padding: 0 1rem; /* Add some padding for better readability */
+      padding: 0 1rem; 
       max-width: 55vw;
+      justify-self: center;
   }
 
   /* Resize the image if you're including it in the future */
@@ -117,7 +118,7 @@
 }
 
 /* Desktop and larger screens */
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
   .home-content h1 {
       font-size: 3rem;
       margin-top: 20vh;
@@ -127,4 +128,4 @@
       font-size: 1.5rem;
       max-width: 75vw;
   }
-}
+} */

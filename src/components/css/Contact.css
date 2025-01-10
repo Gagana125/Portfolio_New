@@ -107,7 +107,7 @@
 /* Mobile View (for screens smaller than 480px) */
 @media (max-width: 380px) {
   .contact-info {
-    width: 30vw; /* Further scale down for mobile */
+    width: 50vw; /* Further scale down for mobile */
   }
 
   .contact-img-container {
